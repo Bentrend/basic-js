@@ -14,7 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
 function getSeason(date) {
   let date1 = new Date(date)
 
-  if (!date1.getFullYear() || !date1.getMonth() || !date1.getDate() || !date1.getHours() || date1.getMinutes() ) {
+  if (!date1.getFullYear() || !date1.getMonth() || !date1.getDate() || !date1.getHours()  ) {
     throw new NotImplementedError("Invalide date!") ;
     
   }
